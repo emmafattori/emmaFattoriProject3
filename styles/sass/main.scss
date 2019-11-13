@@ -1,0 +1,72 @@
+@import 'setup';
+@import 'homepage';
+
+$headerFont:'Luckiest Guy', cursive;
+$paraFont: 'Schoolbell', cursive;
+
+$primaryColour: #7CAEF9;
+$secondaryColour: #32526D;
+$tertiaryColour: #E8E9F3;
+$primaryHighlight: #F2FF49;
+$secondaryHighlight: #52AA8A;
+
+header{
+	height: 100vh;
+	background-image: linear-gradient(to bottom, #e1faff, #5aecff);
+	display: flex;
+
+	.headerImages{
+		color:white;
+		padding: 0 10%;
+		font-size: 4rem;
+		text-align:center;
+		text-shadow: 2px 2px $primaryColour;
+	}
+	.headerInfo{
+
+		margin: 20% auto 0;
+			h1{
+				font-family: $headerFont;
+				text-align:center;
+				line-height: 1.6rem;
+				font-size: 2.5rem;
+				color: $secondaryColour;
+			}
+
+			h3, h4{
+				font-family: $paraFont;
+				text-align:center;
+				color: $secondaryColour;
+			}
+	}
+
+}
+
+.formContainer{
+	margin:5% auto;
+	width: 70%;
+	text-align: center;
+
+	
+	fieldset, legend, label{
+		border:none;
+		margin:2% auto;
+		font-family: $headerFont;
+		color: $secondaryColour;
+	}
+
+	.nameLabel{
+		display:block;
+	}
+
+	
+	.submit{
+		padding:3%;
+		font-family: $paraFont;
+		background: $primaryHighlight;
+		box-shadow: 3px 3px $secondaryHighlight;
+		border:none;
+		border-radius: 10px;
+		font-size: 2.5rem;
+	}
+}
