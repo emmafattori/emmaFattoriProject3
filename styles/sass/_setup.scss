@@ -9,6 +9,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 body{
 	font-size: 125%;
 	line-height: 120%;
+	background-image: linear-gradient(to bottom, #e1faff, #5aecff, #03a2ce);
+
 }
 
 body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, label, footer, ul, li{
@@ -19,4 +21,5 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
 .wrapper{
 	width:90%;
 	max-width: 1080px;
+	margin:0 auto;
 }

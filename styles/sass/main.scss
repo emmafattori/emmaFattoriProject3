@@ -1,5 +1,6 @@
 @import 'setup';
 @import 'homepage';
+@import 'keyframes';
 
 $headerFont:'Luckiest Guy', cursive;
 $paraFont: 'Schoolbell', cursive;
@@ -9,22 +10,28 @@ $secondaryColour: #32526D;
 $tertiaryColour: #E8E9F3;
 $primaryHighlight: #F2FF49;
 $secondaryHighlight: #52AA8A;
-
+// Start of title page styling
 header{
 	height: 100vh;
-	background-image: linear-gradient(to bottom, #e1faff, #5aecff);
-	display: flex;
+	background-attachment: static;
 
 	.headerImages{
 		color:white;
-		padding: 0 10%;
 		font-size: 4rem;
+		padding: 0 auto;
 		text-align:center;
 		text-shadow: 2px 2px $primaryColour;
-	}
+
+
+	
+		i{
+		animation: clouds 10s linear infinite;
+		}
+	}	
+		
 	.headerInfo{
 
-		margin: 20% auto 0;
+		margin: 15% auto 0;
 			h1{
 				font-family: $headerFont;
 				text-align:center;
@@ -62,6 +69,27 @@ header{
 	
 	.submit{
 		padding:3%;
+		font-family: $paraFont;
+		background: $primaryHighlight;
+		box-shadow: 3px 3px $secondaryHighlight;
+		border:none;
+		border-radius: 10px;
+		font-size: 2.5rem;
+	}
+}
+// End of title page styling
+
+// Start of slide 1 styles
+#slide1 {
+	height: 100vh;
+
+	.leftText, .rightText{
+		width: 50%;
+		font-family: $paraFont;
+	}
+
+	button{
+		padding:2%;
 		font-family: $paraFont;
 		background: $primaryHighlight;
 		box-shadow: 3px 3px $secondaryHighlight;
