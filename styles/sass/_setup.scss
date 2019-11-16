@@ -6,6 +6,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+$headerFont:'Love Ya Like A Sister', cursive;
+$paraFont: 'Pangolin', cursive;
+
+$primaryColour: #7CAEF9;
+$secondaryColour: #32526D;
+$tertiaryColour: #E8E9F3;
+$primaryHighlight: #F2FF49;
+$secondaryHighlight: lightgreen;
+	
+
 body{
 	font-size: 125%;
 	line-height: 120%;
@@ -30,4 +40,14 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
 
 .hide{
 	display:none;
+}
+
+p{
+	font-family: $paraFont;
+}
+
+a{
+	text-decoration-style: none;
+	text-decoration: none;
+	color: inherit;
 }

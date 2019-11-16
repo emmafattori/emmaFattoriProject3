@@ -205,6 +205,17 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
   display: none;
 }
 
+p {
+  font-family: "Pangolin", cursive;
+}
+
+a {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 @-webkit-keyframes clouds {
   0% {
     top: 0;
@@ -476,15 +487,16 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
 
 .button {
   text-align: center;
-  padding-left: 30%;
+  padding-left: 42%;
+  padding-top: 25%;
 }
 
 .button .next {
   padding: 2%;
   font-family: "Pangolin", cursive;
   background: #F2FF49;
-  -webkit-box-shadow: 3px 3px #52AA8A;
-          box-shadow: 3px 3px #52AA8A;
+  -webkit-box-shadow: 3px 3px lightgreen;
+          box-shadow: 3px 3px lightgreen;
   border: none;
   border-radius: 10px;
   font-size: 2.5rem;
@@ -495,19 +507,6 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
   position: relative;
   text-align: left;
   padding: 0;
-}
-
-.button2 {
-  text-align: center;
-  padding-left: 20%;
-}
-
-.button2 .next2 {
-  position: static;
-}
-
-.button3 {
-  margin-top: 50%;
 }
 
 header {
@@ -579,7 +578,7 @@ header .headerInfo h3, header .headerInfo h4 {
 }
 
 .formContainer .nameContainer {
-  background: #52AA8A;
+  background: lightgreen;
   padding: 2%;
   border-radius: 20px;
 }
@@ -588,8 +587,8 @@ header .headerInfo h3, header .headerInfo h4 {
   padding: 3%;
   font-family: "Pangolin", cursive;
   background: #F2FF49;
-  -webkit-box-shadow: 3px 3px #52AA8A;
-          box-shadow: 3px 3px #52AA8A;
+  -webkit-box-shadow: 3px 3px lightgreen;
+          box-shadow: 3px 3px lightgreen;
   border: none;
   border-radius: 10px;
   font-size: 2.5rem;
@@ -598,6 +597,10 @@ header .headerInfo h3, header .headerInfo h4 {
 .name {
   font-size: 1.8rem;
   text-transform: capitalize;
+}
+
+span {
+  font-size: 2rem;
 }
 
 .slide1 {
@@ -611,17 +614,14 @@ header .headerInfo h3, header .headerInfo h4 {
   border-right: 2px solid black;
   width: 60%;
   font-family: "Pangolin", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   background: lightgreen;
   padding: 3%;
   border-radius: 30px;
   -webkit-box-shadow: 1px 2px black;
           box-shadow: 1px 2px black;
   margin: 10% 0 0 40%;
-}
-
-.slide1 span {
-  font-size: 1.5rem;
 }
 
 .slide2 {
@@ -631,41 +631,38 @@ header .headerInfo h3, header .headerInfo h4 {
 
 .slide2 .rightText {
   border-left: 2px solid black;
-  width: 50%;
+  width: 100%;
   font-family: "Pangolin", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   background: lightgreen;
-  padding: 3%;
+  padding: 8%;
   border-radius: 30px;
   -webkit-box-shadow: 1px 2px black;
           box-shadow: 1px 2px black;
 }
 
-.slide2 span {
-  font-size: 1.5rem;
-}
-
-.slide3 {
+.bugga {
   height: 100vh;
   font-family: "Pangolin", cursive;
   font-size: 3rem;
   line-height: 3rem;
 }
 
-.slide3 span {
+.bugga span {
   font-size: 3rem;
 }
 
-.slide3 h3 {
+.bugga h3 {
   padding: 8% 0;
 }
 
-.slide3 .bugContainer {
+.bugga .bugContainer {
   width: 50%;
   position: relative;
 }
 
-.slide3 .bugContainer .ladybug {
+.bugga .bugContainer .bug {
   width: 100%;
   position: absolute;
   right: 450px;
@@ -675,8 +672,43 @@ header .headerInfo h3, header .headerInfo h4 {
 
 .slide4 {
   height: 100vh;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 1.6rem;
+}
+
+.slide4 .frogContainer {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  z-index: -2;
+}
+
+.slide4 .frogContainer img {
+  width: 100%;
+}
+
+.slide4 .frogText {
+  width: 60%;
+  padding: 3%;
+  border-radius: 30px;
+  background: lightgreen;
+  margin-top: 30%;
+  position: relative;
 }
 
 .slide5 {
   height: 100vh;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.slide5 .textContainer5 {
+  width: 90%;
+  background: lightgreen;
+  padding: 3%;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px #32526D;
+          box-shadow: 3px 3px #32526D;
 }

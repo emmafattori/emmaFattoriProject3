@@ -28,8 +28,22 @@ const storyApp = {};
 	});
 	$('.next2').on('click', function(){
 		nextPage('#slide3');
-		$('.ladybug').animate({right: "-350px"}, 8000);
+		$('.bug').animate({right: "-350px"}, 8000);
 	
+	})
+
+	$('.next3').on('click', function(){
+		nextPage('#slide4');
+	})
+
+	$('.next4').on('click', function(){
+		nextPage('#slide5');
+		
+	})
+
+	$('.next5').on('click', function(){
+		nextPage('#slide6');
+		$('.bug').animate({right: "-350px"}, 8000);
 	})
 
 

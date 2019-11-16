@@ -10,7 +10,7 @@ $primaryColour: #7CAEF9;
 $secondaryColour: rgb(18, 39, 57);
 $tertiaryColour: #E8E9F3;
 $primaryHighlight: #F2FF49;
-$secondaryHighlight: #52AA8A;
+$secondaryHighlight: lightgreen;
 // Start of title page styling
 header{
 	height: 100vh;
@@ -103,11 +103,16 @@ header{
 	}
 }
 // End of title page styling
+
+// Start of styling for dynamic inputs
 .name{
 	font-size: 1.8rem;
 	text-transform: capitalize;
 }
 
+span{
+			font-size:2rem;
+		}
 
 	
 // Start of slide 1 styles
@@ -118,57 +123,42 @@ header{
 	background-repeat: no-repeat;
 	background-position: revert;
 
-
-	
-
 		.leftText{
 		border-right: 2px solid black;
 		width: 60%;
 		font-family: $paraFont;
-		font-size: 1.5rem;
-		background: lightgreen;
+		font-size: 2rem;
+		line-height:2rem;
+		background: $secondaryHighlight;
 		padding: 3%;
 		border-radius: 30px;
 		box-shadow: 1px 2px black;
 		margin: 10% 0 0 40%;
 		}
 
-		span{
-			font-size:1.5rem;
-		}
+		
 }
 
+// Start of slide 2 styles
 .slide2{
 	height: 100vh;
 	font-family: $paraFont;
 
 		.rightText{
 			border-left: 2px solid black;
-			width: 50%;
+			width: 100%;
 			font-family: $paraFont;
-			font-size: 1.5rem;
+			font-size: 2rem;
+			line-height: 2rem;
 			background: lightgreen;
-			padding: 3%;
+			padding: 8%;
 			border-radius: 30px;
 			box-shadow: 1px 2px black;
 			}
 
-			span{
-				font-size: 1.5rem;
-			}
-
-	
-
-
-		
-		}
-
-
-
-
-
-
-.slide3{
+}
+// Start of slide 3 styles (repeated 'bugga' slide)
+.bugga{
 	height: 100vh;
 	font-family: $paraFont;
 	font-size: 3rem;
@@ -186,7 +176,7 @@ header{
 	position: relative;
 
 	
-		.ladybug{
+		.bug{
 			width: 100%;
 			position: absolute;
 			right: 450px;
@@ -197,12 +187,45 @@ header{
 	}
 
 }
-
+// Start of slide 4 styles
 .slide4{
 	height: 100vh;
-}
+	font-family: $paraFont;
+	font-size: 2rem;
+	line-height: 1.6rem;
 
+	.frogContainer{
+		text-align: right;
+		position: absolute;
+		right:0;
+		z-index: -2;
+
+		img{
+			width: 100%;
+		}
+	}
+	.frogText{
+		width: 60%;
+		padding: 3%;
+		border-radius: 30px;
+		background: $secondaryHighlight;
+		margin-top: 30%;
+		position: relative;
+	}
+}
+// Start of slide 5 styles
 .slide5{
 	height: 100vh;
+	font-family: $paraFont;
+	font-size: 2rem;
+	line-height: 2.2rem;
+
+	.textContainer5{
+		width:90%;
+		background: $secondaryHighlight;
+		padding: 3%;
+		border-radius: 30px;
+		box-shadow: 3px 3px #32526D;
+	}
 }
 

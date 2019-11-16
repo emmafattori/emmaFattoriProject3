@@ -5,14 +5,15 @@ $primaryColour: #7CAEF9;
 $secondaryColour: #32526D;
 $tertiaryColour: #E8E9F3;
 $primaryHighlight: #F2FF49;
-$secondaryHighlight: #52AA8A;
+$secondaryHighlight: lightgreen;
 	
 	
 	
 	
 	.button{
 		text-align: center;
-		padding-left: 30%;
+		padding-left: 42%;
+		padding-top: 25%;
 
 			.next{
 			padding:2%;
@@ -31,18 +32,4 @@ $secondaryHighlight: #52AA8A;
 		
 		text-align: left;
 		padding:0;
-	}
-
-	.button2{
-		text-align: center;
-		padding-left: 20%;
-
-		.next2{
-			position:static;
-		
-		}
-	}
-
-	.button3{
-		margin-top: 50%;
 	}
