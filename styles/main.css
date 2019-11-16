@@ -197,6 +197,14 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
   margin: 0 auto;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 @-webkit-keyframes clouds {
   0% {
     top: 0;
@@ -241,22 +249,270 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
   }
 }
 
+@-webkit-keyframes cloud1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  20% {
+    right: 30px;
+  }
+  40% {
+    right: 0;
+  }
+  60% {
+    right: 50px;
+  }
+  80% {
+    right: 0;
+  }
+  100% {
+    top: 100%;
+    right: 30px;
+  }
+}
+
+@keyframes cloud1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  20% {
+    right: 30px;
+  }
+  40% {
+    right: 0;
+  }
+  60% {
+    right: 50px;
+  }
+  80% {
+    right: 0;
+  }
+  100% {
+    top: 100%;
+    right: 30px;
+  }
+}
+
+@-webkit-keyframes cloud2 {
+  0% {
+    top: 0;
+    left: 500px;
+  }
+  30% {
+    left: 400px;
+  }
+  70% {
+    left: 500px;
+  }
+  100% {
+    top: 100%;
+    left: 700px;
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    top: 0;
+    left: 500px;
+  }
+  30% {
+    left: 400px;
+  }
+  70% {
+    left: 500px;
+  }
+  100% {
+    top: 100%;
+    left: 700px;
+  }
+}
+
+@-webkit-keyframes cloud3 {
+  0% {
+    top: 0;
+    left: 90px;
+  }
+  40% {
+    left: 200px;
+  }
+  50% {
+    left: 150px;
+  }
+  60% {
+    left: 100px;
+  }
+  70% {
+    left: 120px;
+  }
+  80% {
+    left: 150px;
+  }
+  100% {
+    top: 100%;
+    left: 90px;
+  }
+}
+
+@keyframes cloud3 {
+  0% {
+    top: 0;
+    left: 90px;
+  }
+  40% {
+    left: 200px;
+  }
+  50% {
+    left: 150px;
+  }
+  60% {
+    left: 100px;
+  }
+  70% {
+    left: 120px;
+  }
+  80% {
+    left: 150px;
+  }
+  100% {
+    top: 100%;
+    left: 90px;
+  }
+}
+
+@-webkit-keyframes cloud4 {
+  0% {
+    top: 0;
+    left: 400px;
+    color: white;
+  }
+  100% {
+    top: 100%;
+    left: 400px;
+    color: white;
+    opacity: 50%;
+  }
+}
+
+@keyframes cloud4 {
+  0% {
+    top: 0;
+    left: 400px;
+    color: white;
+  }
+  100% {
+    top: 100%;
+    left: 400px;
+    color: white;
+    opacity: 50%;
+  }
+}
+
+.cloud1 {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  -webkit-animation-name: cloud1;
+          animation-name: cloud1;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -2;
+  text-shadow: 2px 2px lightslategrey;
+}
+
+.cloud2 {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  -webkit-animation-name: cloud2;
+          animation-name: cloud2;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -2;
+  text-shadow: 2px 2px lightslategrey;
+}
+
+.cloud3 {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  -webkit-animation-name: cloud3;
+          animation-name: cloud3;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -2;
+  text-shadow: 2px 2px lightslategrey;
+}
+
+.cloud4 {
+  position: absolute;
+  font-size: 100px;
+  color: white;
+  opacity: 50;
+  -webkit-animation-name: cloud4;
+          animation-name: cloud4;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -2;
+  text-shadow: 2px 2px lightslategrey;
+}
+
+.button {
+  text-align: center;
+  padding-left: 30%;
+}
+
+.button .next {
+  padding: 2%;
+  font-family: "Pangolin", cursive;
+  background: #F2FF49;
+  -webkit-box-shadow: 3px 3px #52AA8A;
+          box-shadow: 3px 3px #52AA8A;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.bird {
+  position: relative;
+  text-align: left;
+  padding: 0;
+}
+
+.button2 {
+  text-align: center;
+  padding-left: 20%;
+}
+
+.button2 .next2 {
+  position: static;
+}
+
+.button3 {
+  margin-top: 50%;
+}
+
 header {
   height: 100vh;
   background-attachment: static;
-}
-
-header .headerImages {
-  color: white;
-  font-size: 4rem;
-  padding: 0 auto;
-  text-align: center;
-  text-shadow: 2px 2px #7CAEF9;
-}
-
-header .headerImages i {
-  -webkit-animation: clouds 10s linear infinite;
-          animation: clouds 10s linear infinite;
 }
 
 header .headerInfo {
@@ -264,17 +520,19 @@ header .headerInfo {
 }
 
 header .headerInfo h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Love Ya Like A Sister", cursive;
   text-align: center;
-  line-height: 1.6rem;
-  font-size: 2.5rem;
-  color: #32526D;
+  line-height: 4rem;
+  font-size: 5rem;
+  color: #122739;
 }
 
 header .headerInfo h3, header .headerInfo h4 {
-  font-family: "Schoolbell", cursive;
+  font-family: "Pangolin", cursive;
   text-align: center;
-  color: #32526D;
+  color: #122739;
+  font-size: 2rem;
+  line-height: 4rem;
 }
 
 .formContainer {
@@ -286,17 +544,49 @@ header .headerInfo h3, header .headerInfo h4 {
 .formContainer fieldset, .formContainer legend, .formContainer label {
   border: none;
   margin: 2% auto;
-  font-family: "Luckiest Guy", cursive;
-  color: #32526D;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #122739;
+}
+
+.formContainer legend {
+  margin: 3% auto;
+  font-size: 1.8rem;
+}
+
+.formContainer .check {
+  font-size: 1.5rem;
+}
+
+.formContainer input[type=checkbox] {
+  opacity: 0;
+}
+
+.formContainer input[type=checkbox]:checked + label {
+  border: 2px solid black;
+  padding: 1%;
 }
 
 .formContainer .nameLabel {
-  display: block;
+  padding: 2%;
+  font-size: 2rem;
+}
+
+.formContainer input[type=text] {
+  font-size: 2rem;
+  font-family: "Pangolin", cursive;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.formContainer .nameContainer {
+  background: #52AA8A;
+  padding: 2%;
+  border-radius: 20px;
 }
 
 .formContainer .submit {
   padding: 3%;
-  font-family: "Schoolbell", cursive;
+  font-family: "Pangolin", cursive;
   background: #F2FF49;
   -webkit-box-shadow: 3px 3px #52AA8A;
           box-shadow: 3px 3px #52AA8A;
@@ -305,22 +595,88 @@ header .headerInfo h3, header .headerInfo h4 {
   font-size: 2.5rem;
 }
 
-#slide1 {
+.name {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.slide1 {
+  height: 100vh;
+  background-image: url(assets/tree.png);
+  background-repeat: no-repeat;
+  background-position: revert;
+}
+
+.slide1 .leftText {
+  border-right: 2px solid black;
+  width: 60%;
+  font-family: "Pangolin", cursive;
+  font-size: 1.5rem;
+  background: lightgreen;
+  padding: 3%;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+  margin: 10% 0 0 40%;
+}
+
+.slide1 span {
+  font-size: 1.5rem;
+}
+
+.slide2 {
+  height: 100vh;
+  font-family: "Pangolin", cursive;
+}
+
+.slide2 .rightText {
+  border-left: 2px solid black;
+  width: 50%;
+  font-family: "Pangolin", cursive;
+  font-size: 1.5rem;
+  background: lightgreen;
+  padding: 3%;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+}
+
+.slide2 span {
+  font-size: 1.5rem;
+}
+
+.slide3 {
+  height: 100vh;
+  font-family: "Pangolin", cursive;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.slide3 span {
+  font-size: 3rem;
+}
+
+.slide3 h3 {
+  padding: 8% 0;
+}
+
+.slide3 .bugContainer {
+  width: 50%;
+  position: relative;
+}
+
+.slide3 .bugContainer .ladybug {
+  width: 100%;
+  position: absolute;
+  right: 450px;
+  top: 100px;
+  z-index: -1;
+}
+
+.slide4 {
   height: 100vh;
 }
 
-#slide1 .leftText, #slide1 .rightText {
-  width: 50%;
-  font-family: "Schoolbell", cursive;
-}
-
-#slide1 button {
-  padding: 2%;
-  font-family: "Schoolbell", cursive;
-  background: #F2FF49;
-  -webkit-box-shadow: 3px 3px #52AA8A;
-          box-shadow: 3px 3px #52AA8A;
-  border: none;
-  border-radius: 10px;
-  font-size: 2.5rem;
+.slide5 {
+  height: 100vh;
 }

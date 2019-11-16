@@ -1,0 +1,48 @@
+$headerFont:'Love Ya Like A Sister', cursive;
+$paraFont: 'Pangolin', cursive;
+
+$primaryColour: #7CAEF9;
+$secondaryColour: #32526D;
+$tertiaryColour: #E8E9F3;
+$primaryHighlight: #F2FF49;
+$secondaryHighlight: #52AA8A;
+	
+	
+	
+	
+	.button{
+		text-align: center;
+		padding-left: 30%;
+
+			.next{
+			padding:2%;
+			font-family: $paraFont;
+			background: $primaryHighlight;
+			box-shadow: 3px 3px $secondaryHighlight;
+			border:none;
+			border-radius: 10px;
+			font-size: 2.5rem;
+			text-align: center;
+			}
+	}
+	
+	.bird{
+		position: relative;
+		
+		text-align: left;
+		padding:0;
+	}
+
+	.button2{
+		text-align: center;
+		padding-left: 20%;
+
+		.next2{
+			position:static;
+		
+		}
+	}
+
+	.button3{
+		margin-top: 50%;
+	}

@@ -1,33 +1,21 @@
 @import 'setup';
 @import 'homepage';
 @import 'keyframes';
+@import 'buttons';
 
-$headerFont:'Luckiest Guy', cursive;
-$paraFont: 'Schoolbell', cursive;
+$headerFont:'Love Ya Like A Sister', cursive;
+$paraFont: 'Pangolin', cursive;
 
 $primaryColour: #7CAEF9;
-$secondaryColour: #32526D;
+$secondaryColour: rgb(18, 39, 57);
 $tertiaryColour: #E8E9F3;
 $primaryHighlight: #F2FF49;
 $secondaryHighlight: #52AA8A;
 // Start of title page styling
 header{
 	height: 100vh;
-	background-attachment: static;
-
-	.headerImages{
-		color:white;
-		font-size: 4rem;
-		padding: 0 auto;
-		text-align:center;
-		text-shadow: 2px 2px $primaryColour;
-
-
+	background-attachment:static;
 	
-		i{
-		animation: clouds 10s linear infinite;
-		}
-	}	
 		
 	.headerInfo{
 
@@ -35,8 +23,8 @@ header{
 			h1{
 				font-family: $headerFont;
 				text-align:center;
-				line-height: 1.6rem;
-				font-size: 2.5rem;
+				line-height: 4rem;
+				font-size: 5rem;
 				color: $secondaryColour;
 			}
 
@@ -44,6 +32,8 @@ header{
 				font-family: $paraFont;
 				text-align:center;
 				color: $secondaryColour;
+				font-size: 2rem;
+				line-height:4rem;
 			}
 	}
 
@@ -62,8 +52,43 @@ header{
 		color: $secondaryColour;
 	}
 
+	legend{
+		margin: 3% auto;
+		font-size: 1.8rem;
+	}
+
+	.check{
+		font-size: 1.5rem;
+	}
+
+	input[type=checkbox]{
+		opacity:0;
+	}
+
+	input[type=checkbox]:checked + label{
+		border: 2px solid black;
+		padding: 1%;
+	}
+
+
 	.nameLabel{
-		display:block;
+		
+		padding: 2%;
+		
+		font-size: 2rem;
+	}
+
+	input[type=text]{
+		font-size: 2rem;
+		font-family: $paraFont;
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	.nameContainer{
+		background: $secondaryHighlight;
+		padding:2%;
+		border-radius: 20px;
 	}
 
 	
@@ -78,23 +103,106 @@ header{
 	}
 }
 // End of title page styling
-
-// Start of slide 1 styles
-#slide1 {
-	height: 100vh;
-
-	.leftText, .rightText{
-		width: 50%;
-		font-family: $paraFont;
-	}
-
-	button{
-		padding:2%;
-		font-family: $paraFont;
-		background: $primaryHighlight;
-		box-shadow: 3px 3px $secondaryHighlight;
-		border:none;
-		border-radius: 10px;
-		font-size: 2.5rem;
-	}
+.name{
+	font-size: 1.8rem;
+	text-transform: capitalize;
 }
+
+
+	
+// Start of slide 1 styles
+
+.slide1 {
+	height: 100vh;
+	background-image: url(assets/tree.png);
+	background-repeat: no-repeat;
+	background-position: revert;
+
+
+	
+
+		.leftText{
+		border-right: 2px solid black;
+		width: 60%;
+		font-family: $paraFont;
+		font-size: 1.5rem;
+		background: lightgreen;
+		padding: 3%;
+		border-radius: 30px;
+		box-shadow: 1px 2px black;
+		margin: 10% 0 0 40%;
+		}
+
+		span{
+			font-size:1.5rem;
+		}
+}
+
+.slide2{
+	height: 100vh;
+	font-family: $paraFont;
+
+		.rightText{
+			border-left: 2px solid black;
+			width: 50%;
+			font-family: $paraFont;
+			font-size: 1.5rem;
+			background: lightgreen;
+			padding: 3%;
+			border-radius: 30px;
+			box-shadow: 1px 2px black;
+			}
+
+			span{
+				font-size: 1.5rem;
+			}
+
+	
+
+
+		
+		}
+
+
+
+
+
+
+.slide3{
+	height: 100vh;
+	font-family: $paraFont;
+	font-size: 3rem;
+	line-height: 3rem;
+
+	span{
+		font-size: 3rem;
+	}
+	h3{
+		padding: 8% 0;
+	}
+
+	.bugContainer{
+	width: 50%;
+	position: relative;
+
+	
+		.ladybug{
+			width: 100%;
+			position: absolute;
+			right: 450px;
+			top: 100px;	
+			z-index: -1;	
+
+		}
+	}
+
+}
+
+.slide4{
+	height: 100vh;
+}
+
+.slide5{
+	height: 100vh;
+}
+

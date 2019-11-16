@@ -23,3 +23,152 @@
     top: 100%;
   }
 }
+
+		@keyframes cloud1{
+			0%{
+				top:0;
+				right:0;
+			}
+
+			20%{
+				right:30px;
+			}
+
+			40% {
+				right:0;
+			}
+
+			60%{
+				right:50px;
+			}
+
+			80%{
+				right:0;
+			}
+
+			100%{
+				top:100%;
+				right:30px;
+			}
+
+		}
+
+		@keyframes cloud2{
+
+			0% {
+				top:0;
+				left:500px;
+			}
+
+			30% {
+				left:400px;
+
+			}
+
+			70%{
+				left:500px;
+			}
+
+			100% {
+				top:100%;
+				left:700px;
+			}
+		}
+
+		@keyframes cloud3 {
+			0% {
+				top:0;
+				left:90px;
+			}
+
+			40%{
+				left:200px;
+			}
+
+			50%{
+				left:150px;
+			}
+
+			60%{
+				left:100px;
+			}
+			70%{
+				left:120px;
+			}
+			80% {
+				left:150px;
+			}
+
+			100%{
+				top:100%;
+				left:90px;
+			}
+		}
+
+		@keyframes cloud4{
+			0%{
+				top:0;
+				left:400px;
+				color:white;
+			}
+
+			100% {
+				top:100%;
+				left:400px;
+				color:white;
+				opacity: 50%;
+			}
+		}
+
+		.cloud1 {
+			position:absolute;
+			font-size:50px;
+			color:white;
+			animation-name:cloud1;
+			animation-duration: 30s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			z-index: -2;
+			text-shadow: 2px 2px lightslategrey;
+		}
+
+		.cloud2{
+			position:absolute;
+			font-size:30px;
+			color:white;
+			animation-name:cloud2;
+			animation-duration: 60s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			z-index: -2;
+			text-shadow: 2px 2px lightslategrey;
+
+
+		}
+
+		.cloud3{
+			position:absolute;
+			font-size:70px;
+			color:white;
+			animation-name:cloud3;
+			animation-duration: 20s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			z-index: -2;
+			text-shadow: 2px 2px lightslategrey;
+
+		}
+
+		.cloud4 {
+			position:absolute;
+			font-size:100px;
+			color:white;
+			opacity: 50;
+			animation-name:cloud4;
+			animation-duration:15s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			z-index: -2;
+			text-shadow: 2px 2px lightslategrey;
+
+		}
