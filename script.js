@@ -1,6 +1,7 @@
 const storyApp = {};
 // This is a function that takes a perameter of the slide number. The slide number corresponds to the html section of the story. The function slides to the slide number that is passed as an argument.
 
+storyApp.init = () =>{
 	const nextPage = function(slideNo){
 	 $('html, body').animate({
         scrollTop: $(slideNo).offset().top
@@ -100,12 +101,16 @@ pronounPicker1 = function(){
 };
 
 pronounPicker2 = function(){
-	if(storyApp.pronoun === 'her'){
-		$('.pronoun3').text('her\'s')
-	} else if (storyApp.pronoun === 'him'){
-		$('.pronoun3').text('his')
-	}else {
-		$('.pronoun3').text('their')
+		if(storyApp.pronoun === 'her'){
+			$('.pronoun3').text('her\'s')
+		} else if (storyApp.pronoun === 'him'){
+			$('.pronoun3').text('his')
+		}else {
+			$('.pronoun3').text('their')
+		}
 	}
-}
-
+};
+// Document ready function
+$(document).ready(() => {
+    storyApp.init();
+});

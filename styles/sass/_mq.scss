@@ -1,5 +1,9 @@
-@media (max-width: 470px){
-	p{
+@media (max-width: 375px){
+	p, 
+	span.name, 
+	span.pronoun, 
+	span.pronoun2, 
+	span.pronoun3 {
 		font-size: 1.6rem;
 		line-height: 1.8rem;
 	}
@@ -8,17 +12,18 @@
 	}
 	header .headerInfo{
 		h1{
-			font-size: 4rem;
+			font-size: 3rem;
+			line-height: 3rem;
 		}
 
 		h3{
-			font-size: 1.8rem;
-			line-height: 3rem;
+			font-size: 1.5rem;
+			line-height: 2rem;
 		}
 
 		h4{
-			font-size: 1.5rem;
-			line-height: 3rem;
+			font-size: 1.2rem;
+			line-height: 2rem;
 		}
 	}
 
@@ -26,7 +31,7 @@
 		width: 85%;
 
 		input[type=text]{
-			font-size: 1.6rem;
+			font-size: 1.3rem;
 		}
 
 		input[type=checkbox]{
@@ -40,7 +45,7 @@
 
 	.storyText .leftText{
 		margin:0 auto;
-		width: 70%;
+		width: 85%;
 	}
 
 	.slide2 .rightText, 
@@ -48,7 +53,7 @@
 	.slide7 .textContainer7 {
 		width: 85%;
 		position: absolute;
-		top: 100px;
+		top: 70px;
 		margin:0 auto;
 	}
 
