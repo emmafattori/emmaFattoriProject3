@@ -216,6 +216,18 @@ a {
   color: inherit;
 }
 
+h3 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: "Pangolin", cursive;
+  margin: 3% auto;
+}
+
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10, .slide11, .slide12, .slide13, .slide14 {
+  position: relative;
+  height: 100vh;
+}
+
 @-webkit-keyframes clouds {
   0% {
     top: 0;
@@ -309,34 +321,34 @@ a {
 @-webkit-keyframes cloud2 {
   0% {
     top: 0;
-    left: 500px;
+    left: 300px;
   }
   30% {
-    left: 400px;
+    left: 200px;
   }
   70% {
-    left: 500px;
+    left: 200px;
   }
   100% {
     top: 100%;
-    left: 700px;
+    left: 200px;
   }
 }
 
 @keyframes cloud2 {
   0% {
     top: 0;
-    left: 500px;
+    left: 300px;
   }
   30% {
-    left: 400px;
+    left: 200px;
   }
   70% {
-    left: 500px;
+    left: 200px;
   }
   100% {
     top: 100%;
-    left: 700px;
+    left: 200px;
   }
 }
 
@@ -395,7 +407,7 @@ a {
 @-webkit-keyframes cloud4 {
   0% {
     top: 0;
-    left: 400px;
+    left: 250px;
     color: white;
   }
   100% {
@@ -409,7 +421,7 @@ a {
 @keyframes cloud4 {
   0% {
     top: 0;
-    left: 400px;
+    left: 250px;
     color: white;
   }
   100% {
@@ -487,8 +499,9 @@ a {
 
 .button {
   text-align: center;
-  padding-left: 42%;
-  padding-top: 25%;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
 }
 
 .button .next {
@@ -507,6 +520,16 @@ a {
   position: relative;
   text-align: left;
   padding: 0;
+}
+
+.startOver, .end {
+  margin: 2% 0;
+  position: static;
+}
+
+.startOver .startOver, .startOver .end, .end .startOver, .end .end {
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
 }
 
 header {
@@ -627,6 +650,7 @@ span {
 .slide2 {
   height: 100vh;
   font-family: "Pangolin", cursive;
+  position: relative;
 }
 
 .slide2 .rightText {
@@ -647,6 +671,7 @@ span {
   font-family: "Pangolin", cursive;
   font-size: 3rem;
   line-height: 3rem;
+  position: relative;
 }
 
 .bugga span {
@@ -675,6 +700,7 @@ span {
   font-family: "Pangolin", cursive;
   font-size: 2rem;
   line-height: 1.6rem;
+  position: relative;
 }
 
 .slide4 .frogContainer {
@@ -702,6 +728,7 @@ span {
   font-family: "Pangolin", cursive;
   font-size: 2rem;
   line-height: 2.2rem;
+  position: relative;
 }
 
 .slide5 .textContainer5 {
@@ -711,4 +738,128 @@ span {
   border-radius: 30px;
   -webkit-box-shadow: 3px 3px #32526D;
           box-shadow: 3px 3px #32526D;
+  top: 10%;
+}
+
+.slide7 .textContainer7 {
+  border-left: 2px solid black;
+  width: 100%;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: lightgreen;
+  padding: 8%;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+}
+
+.slide10 {
+  background-image: url(assets/tree.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.slide10 .textContainer10 {
+  width: 60%;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: lightgreen;
+  padding: 2%;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+  position: absolute;
+  top: 15%;
+}
+
+.slide11 .image11 {
+  width: 40%;
+}
+
+.slide11 .image11 img {
+  width: 100%;
+}
+
+.slide11 .textContainer11 {
+  width: 60%;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: lightgreen;
+  padding: 2%;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.slide13 {
+  background-image: url(assets/tree.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.slide13 .textContainer13 {
+  width: 60%;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: lightgreen;
+  padding: 2%;
+  border-radius: 30px;
+}
+
+.textContainer14 h4 {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 250px;
+}
+
+@media (max-width: 470px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  .cloud4 {
+    font-size: 50px;
+  }
+  header .headerInfo h1 {
+    font-size: 4rem;
+  }
+  header .headerInfo h3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  header .headerInfo h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .formContainer {
+    width: 85%;
+  }
+  .formContainer input[type=text] {
+    font-size: 1.6rem;
+  }
+  .formContainer input[type=checkbox] {
+    display: block;
+  }
+  .formContainer input[type=submit] {
+    font-size: 2rem;
+  }
+  .storyText .leftText {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .slide2 .rightText,
+  .textContainer5,
+  .slide7 .textContainer7 {
+    width: 85%;
+    position: absolute;
+    top: 100px;
+    margin: 0 auto;
+  }
 }

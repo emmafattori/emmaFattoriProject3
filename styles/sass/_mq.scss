@@ -1,0 +1,57 @@
+@media (max-width: 470px){
+	p{
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+	}
+	.cloud4{
+		font-size: 50px;
+	}
+	header .headerInfo{
+		h1{
+			font-size: 4rem;
+		}
+
+		h3{
+			font-size: 1.8rem;
+			line-height: 3rem;
+		}
+
+		h4{
+			font-size: 1.5rem;
+			line-height: 3rem;
+		}
+	}
+
+	.formContainer{
+		width: 85%;
+
+		input[type=text]{
+			font-size: 1.6rem;
+		}
+
+		input[type=checkbox]{
+			display: block
+		}
+
+		input[type=submit]{
+			font-size: 2rem;
+		}
+	}
+
+	.storyText .leftText{
+		margin:0 auto;
+		width: 70%;
+	}
+
+	.slide2 .rightText, 
+	.textContainer5, 
+	.slide7 .textContainer7 {
+		width: 85%;
+		position: absolute;
+		top: 100px;
+		margin:0 auto;
+	}
+
+
+
+}

@@ -46,7 +46,39 @@ const storyApp = {};
 		$('.bug').animate({right: "-350px"}, 8000);
 	})
 
+	$('.next6').on('click', function(){
+		nextPage('#slide7');
+	})
 
+	$('.next7').on('click', function(){
+		nextPage('#slide8');
+	})
+
+	$('.next8').on('click', function(){
+		nextPage('#slide9');
+		$('.bug').animate({right: "-350px"}, 8000);
+
+	})
+
+	$('.next9').on('click', function(){
+		nextPage('#slide10');
+	})
+
+	$('.next10').on('click', function(){
+		nextPage('#slide11');
+	})
+
+	$('.next11').on('click', function(){
+		nextPage('#slide12');
+	})
+
+	$('.next12').on('click', function(){
+		nextPage('#slide13');
+	})
+
+	$('.next13').on('click', function(){
+		nextPage('#slide14');
+	})
 
 // This function will play the bird sound when the associated button is clicked
 

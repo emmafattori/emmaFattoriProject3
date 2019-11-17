@@ -123,6 +123,7 @@ span{
 	background-repeat: no-repeat;
 	background-position: revert;
 
+
 		.leftText{
 		border-right: 2px solid black;
 		width: 60%;
@@ -143,6 +144,7 @@ span{
 .slide2{
 	height: 100vh;
 	font-family: $paraFont;
+	position: relative;
 
 		.rightText{
 			border-left: 2px solid black;
@@ -163,6 +165,7 @@ span{
 	font-family: $paraFont;
 	font-size: 3rem;
 	line-height: 3rem;
+	position:relative;
 
 	span{
 		font-size: 3rem;
@@ -193,6 +196,7 @@ span{
 	font-family: $paraFont;
 	font-size: 2rem;
 	line-height: 1.6rem;
+	position:relative;
 
 	.frogContainer{
 		text-align: right;
@@ -219,6 +223,7 @@ span{
 	font-family: $paraFont;
 	font-size: 2rem;
 	line-height: 2.2rem;
+	position: relative;
 
 	.textContainer5{
 		width:90%;
@@ -226,6 +231,92 @@ span{
 		padding: 3%;
 		border-radius: 30px;
 		box-shadow: 3px 3px #32526D;
+		top: 10%;
 	}
 }
 
+.slide7{
+	.textContainer7{
+			border-left: 2px solid black;
+			width: 100%;
+			font-family: $paraFont;
+			font-size: 2rem;
+			line-height: 2rem;
+			background: lightgreen;
+			padding: 8%;
+			border-radius: 30px;
+			box-shadow: 1px 2px black;
+	}
+}
+
+.slide10{
+	background-image: url(assets/tree.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+
+	.textContainer10{
+			width: 60%;
+			font-family: $paraFont;
+			font-size: 2rem;
+			line-height: 2rem;
+			background: lightgreen;
+			padding: 2%;
+			border-radius: 30px;
+			box-shadow: 1px 2px black;
+			position: absolute;
+			top: 15%;
+
+	}
+}
+
+.slide11{
+
+	.image11{
+		width:40%;
+
+		img{
+			width:100%;
+		}
+	}
+
+	.textContainer11{
+		width: 60%;
+			font-family: $paraFont;
+			font-size: 2rem;
+			line-height: 2rem;
+			background: lightgreen;
+			padding: 2%;
+			border-radius: 30px;
+			box-shadow: 1px 2px black;
+			position: absolute;
+			top: 25%;
+			left:25%;
+	}
+	
+}
+
+.slide13{
+	background-image: url(assets/tree.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+
+	.textContainer13{
+		width: 60%;
+		font-family: $paraFont;
+		font-size: 2rem;
+		line-height: 2rem;
+		background: lightgreen;
+		padding: 2%;
+		border-radius: 30px;
+	}
+}
+
+.textContainer14{
+	h4{
+		font-size: 5rem;
+		text-align: center;
+		padding-top: 250px;
+	}
+}
+
+@import 'mq';

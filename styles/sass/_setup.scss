@@ -51,3 +51,16 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
+
+h3{
+	font-size: 3rem;
+	line-height: 3rem;
+	font-family: $paraFont;
+	margin: 3% auto;
+}
+
+
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10, .slide11, .slide12, .slide13, .slide14{
+	position: relative;
+	height: 100vh;
+}

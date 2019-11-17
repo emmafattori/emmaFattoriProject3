@@ -57,21 +57,21 @@
 
 			0% {
 				top:0;
-				left:500px;
+				left:300px;
 			}
 
 			30% {
-				left:400px;
+				left:200px;
 
 			}
 
 			70%{
-				left:500px;
+				left:200px;
 			}
 
 			100% {
 				top:100%;
-				left:700px;
+				left:200px;
 			}
 		}
 
@@ -108,7 +108,7 @@
 		@keyframes cloud4{
 			0%{
 				top:0;
-				left:400px;
+				left:250px;
 				color:white;
 			}
 
