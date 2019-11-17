@@ -16,6 +16,7 @@ $secondaryHighlight: lightgreen;
 		right: 5%;
 		bottom:10%;
 
+
 			.next{
 			padding:2%;
 			font-family: $paraFont;
@@ -25,6 +26,8 @@ $secondaryHighlight: lightgreen;
 			border-radius: 10px;
 			font-size: 2.5rem;
 			text-align: center;
+			box-shadow: 2px 2px 2px 2px #32526D;
+
 			}
 	}
 	
@@ -37,9 +40,17 @@ $secondaryHighlight: lightgreen;
 	.startOver, .end{
 		margin: 2% 0;
 		position: static;
+	
+	}
 
-		.startOver, .end{
-		box-shadow: 2px 2px 2px 2px $secondaryColour;
-
-		}
+	.frogButton{
+			padding:2%;
+			font-family: $paraFont;
+			background: $primaryHighlight;
+			box-shadow: 3px 3px $secondaryHighlight;
+			border:none;
+			border-radius: 10px;
+			font-size: 2.5rem;
+			text-align: center;
+			box-shadow: 2px 2px 2px 2px #32526D;
 	}

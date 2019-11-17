@@ -29,7 +29,7 @@ storyApp.init = () =>{
 	});
 	$('.next2').on('click', function(){
 		nextPage('#slide3');
-		$('.bug').animate({right: "-350px"}, 8000);
+		$('.bug').animate({right: "-80%"}, 5000);
 	
 	})
 
@@ -44,7 +44,7 @@ storyApp.init = () =>{
 
 	$('.next5').on('click', function(){
 		nextPage('#slide6');
-		$('.bug').animate({right: "-350px"}, 8000);
+		$('.dragon').animate({right: "-80%"}, 5000);
 	})
 
 	$('.next6').on('click', function(){
@@ -57,7 +57,7 @@ storyApp.init = () =>{
 
 	$('.next8').on('click', function(){
 		nextPage('#slide9');
-		$('.bug').animate({right: "-350px"}, 8000);
+		$('.bee').animate({right: "-80%"}, 5000);
 
 	})
 
@@ -81,10 +81,13 @@ storyApp.init = () =>{
 		nextPage('#slide14');
 	})
 
-// This function will play the bird sound when the associated button is clicked
+// This function will play the bird/frog sound when the associated button is clicked
 
 const playBirds = new Audio("styles/assets/birdAudio.mp3");
 $('.birdButton').click(e => playBirds.play());
+
+const playFrogs = new Audio("styles/assets/frogAudio.mp3");
+$('.frogButton').click(e => playFrogs.play());
 
 
 // This function will generate the object pronoun, rather than the possessive pronoun that is saved in the above variable. This is to allow the story to make grammatical sense.

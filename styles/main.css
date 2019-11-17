@@ -228,6 +228,18 @@ h3 {
   height: 100vh;
 }
 
+.textContainer {
+  width: 60%;
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: lightgreen;
+  padding: 2%;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
+}
+
 @-webkit-keyframes clouds {
   0% {
     top: 0;
@@ -412,7 +424,7 @@ h3 {
   }
   100% {
     top: 100%;
-    left: 400px;
+    left: 300px;
     color: white;
     opacity: 50%;
   }
@@ -426,7 +438,7 @@ h3 {
   }
   100% {
     top: 100%;
-    left: 400px;
+    left: 300px;
     color: white;
     opacity: 50%;
   }
@@ -514,6 +526,8 @@ h3 {
   border-radius: 10px;
   font-size: 2.5rem;
   text-align: center;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
 }
 
 .bird {
@@ -527,7 +541,16 @@ h3 {
   position: static;
 }
 
-.startOver .startOver, .startOver .end, .end .startOver, .end .end {
+.frogButton {
+  padding: 2%;
+  font-family: "Pangolin", cursive;
+  background: #F2FF49;
+  -webkit-box-shadow: 3px 3px lightgreen;
+          box-shadow: 3px 3px lightgreen;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  text-align: center;
   -webkit-box-shadow: 2px 2px 2px 2px #32526D;
           box-shadow: 2px 2px 2px 2px #32526D;
 }
@@ -538,7 +561,7 @@ header {
 }
 
 header .headerInfo {
-  margin: 15% auto 0;
+  margin: 8% auto 0;
 }
 
 header .headerInfo h1 {
@@ -584,7 +607,7 @@ header .headerInfo h3, header .headerInfo h4 {
 }
 
 .formContainer input[type=checkbox]:checked + label {
-  border: 2px solid black;
+  border: 2px solid #122739;
   padding: 1%;
 }
 
@@ -604,6 +627,7 @@ header .headerInfo h3, header .headerInfo h4 {
   background: lightgreen;
   padding: 2%;
   border-radius: 20px;
+  border: 2px solid #122739;
 }
 
 .formContainer .submit {
@@ -634,7 +658,7 @@ span {
 }
 
 .slide1 .leftText {
-  border-right: 2px solid black;
+  border-right: 2px solid #122739;
   width: 60%;
   font-family: "Pangolin", cursive;
   font-size: 2rem;
@@ -642,8 +666,8 @@ span {
   background: lightgreen;
   padding: 3%;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 2px black;
-          box-shadow: 1px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
   margin: 10% 0 0 40%;
 }
 
@@ -654,7 +678,8 @@ span {
 }
 
 .slide2 .rightText {
-  border-left: 2px solid black;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
   width: 100%;
   font-family: "Pangolin", cursive;
   font-size: 2rem;
@@ -662,8 +687,6 @@ span {
   background: lightgreen;
   padding: 8%;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 2px black;
-          box-shadow: 1px 2px black;
 }
 
 .bugga {
@@ -687,6 +710,7 @@ span {
   position: relative;
 }
 
+.bugga .bugContainer .dragon,
 .bugga .bugContainer .bug {
   width: 100%;
   position: absolute;
@@ -703,6 +727,13 @@ span {
   position: relative;
 }
 
+.slide4 .frogButton {
+  position: absolute;
+  top: 63%;
+  left: 35%;
+  z-index: 2;
+}
+
 .slide4 .frogContainer {
   text-align: right;
   position: absolute;
@@ -712,6 +743,7 @@ span {
 
 .slide4 .frogContainer img {
   width: 100%;
+  position: relative;
 }
 
 .slide4 .frogText {
@@ -721,6 +753,8 @@ span {
   background: lightgreen;
   margin-top: 30%;
   position: relative;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
 }
 
 .slide5 {
@@ -736,13 +770,12 @@ span {
   background: lightgreen;
   padding: 3%;
   border-radius: 30px;
-  -webkit-box-shadow: 3px 3px #32526D;
-          box-shadow: 3px 3px #32526D;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
   top: 10%;
 }
 
 .slide7 .textContainer7 {
-  border-left: 2px solid black;
   width: 100%;
   font-family: "Pangolin", cursive;
   font-size: 2rem;
@@ -750,8 +783,8 @@ span {
   background: lightgreen;
   padding: 8%;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 2px black;
-          box-shadow: 1px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
 }
 
 .slide10 {
@@ -768,8 +801,8 @@ span {
   background: lightgreen;
   padding: 2%;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 2px black;
-          box-shadow: 1px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
   position: absolute;
   top: 15%;
 }
@@ -790,8 +823,8 @@ span {
   background: lightgreen;
   padding: 2%;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 2px black;
-          box-shadow: 1px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px #32526D;
+          box-shadow: 2px 2px 2px 2px #32526D;
   position: absolute;
   top: 25%;
   left: 25%;
@@ -801,16 +834,6 @@ span {
   background-image: url(assets/tree.png);
   background-repeat: no-repeat;
   background-position-x: right;
-}
-
-.slide13 .textContainer13 {
-  width: 60%;
-  font-family: "Pangolin", cursive;
-  font-size: 2rem;
-  line-height: 2rem;
-  background: lightgreen;
-  padding: 2%;
-  border-radius: 30px;
 }
 
 .textContainer14 h4 {
@@ -825,11 +848,14 @@ span {
   span.pronoun,
   span.pronoun2,
   span.pronoun3 {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
   .cloud4 {
     font-size: 50px;
+  }
+  header .headerInfo {
+    margin: 5% auto 0;
   }
   header .headerInfo h1 {
     font-size: 3rem;
@@ -846,8 +872,8 @@ span {
   .formContainer {
     width: 85%;
   }
-  .formContainer input[type=text] {
-    font-size: 1.3rem;
+  .formContainer .nameContainer input[type=text] {
+    font-size: 1rem;
   }
   .formContainer input[type=checkbox] {
     display: block;
@@ -861,10 +887,83 @@ span {
   }
   .slide2 .rightText,
   .textContainer5,
-  .slide7 .textContainer7 {
+  .slide7 .textContainer7,
+  .textContainer,
+  .textContainer11 {
     width: 85%;
     position: absolute;
     top: 70px;
     margin: 0 auto;
+  }
+  .frogContainer {
+    position: absolute;
+    bottom: 175px;
+    right: 0;
+  }
+  .button .next {
+    font-size: 2rem;
+  }
+  .slide13 .textContainer13,
+  .slide10 .textContainer10,
+  .slide4 .frogText {
+    margin: 0;
+    width: 85%;
+  }
+  .image11 {
+    padding-top: 15%;
+  }
+  .slide13 h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 487px) {
+  p,
+  span.name,
+  span.pronoun,
+  span.pronoun2,
+  span.pronoun3 {
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .enterName {
+    font-size: 1.5rem;
+  }
+  .textContainer {
+    width: 85%;
+  }
+}
+
+@media (max-width: 695px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  header .formContainer {
+    width: 100%;
+  }
+  header .formContainer input[type=text] {
+    font-size: 1.5rem;
+  }
+  header .headerInfo h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .textContainer,
+  .slide4 .frogText {
+    width: 85%;
+  }
+  .slide4 .frogContainer {
+    position: absolute;
+  }
+  .slide4 .frogContainer .frogButton {
+    left: 55%;
+    top: 50%;
   }
 }

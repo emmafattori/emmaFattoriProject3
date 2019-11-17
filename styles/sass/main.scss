@@ -19,7 +19,7 @@ header{
 		
 	.headerInfo{
 
-		margin: 15% auto 0;
+		margin: 8% auto 0;
 			h1{
 				font-family: $headerFont;
 				text-align:center;
@@ -66,7 +66,7 @@ header{
 	}
 
 	input[type=checkbox]:checked + label{
-		border: 2px solid black;
+		border: 2px solid $secondaryColour;
 		padding: 1%;
 	}
 
@@ -74,7 +74,6 @@ header{
 	.nameLabel{
 		
 		padding: 2%;
-		
 		font-size: 2rem;
 	}
 
@@ -89,6 +88,7 @@ header{
 		background: $secondaryHighlight;
 		padding:2%;
 		border-radius: 20px;
+		border: 2px solid $secondaryColour;
 	}
 
 	
@@ -111,9 +111,8 @@ header{
 }
 
 span{
-			font-size:2rem;
-		}
-
+	font-size:2rem;
+}
 	
 // Start of slide 1 styles
 
@@ -125,7 +124,7 @@ span{
 
 
 		.leftText{
-		border-right: 2px solid black;
+		border-right: 2px solid $secondaryColour;
 		width: 60%;
 		font-family: $paraFont;
 		font-size: 2rem;
@@ -133,7 +132,7 @@ span{
 		background: $secondaryHighlight;
 		padding: 3%;
 		border-radius: 30px;
-		box-shadow: 1px 2px black;
+		box-shadow: 2px 2px 2px 2px #32526D;
 		margin: 10% 0 0 40%;
 		}
 
@@ -147,7 +146,7 @@ span{
 	position: relative;
 
 		.rightText{
-			border-left: 2px solid black;
+			box-shadow: 2px 2px 2px 2px #32526D;
 			width: 100%;
 			font-family: $paraFont;
 			font-size: 2rem;
@@ -155,7 +154,6 @@ span{
 			background: lightgreen;
 			padding: 8%;
 			border-radius: 30px;
-			box-shadow: 1px 2px black;
 			}
 
 }
@@ -178,7 +176,7 @@ span{
 	width: 50%;
 	position: relative;
 
-	
+		.dragon, 
 		.bug{
 			width: 100%;
 			position: absolute;
@@ -197,6 +195,13 @@ span{
 	font-size: 2rem;
 	line-height: 1.6rem;
 	position:relative;
+	
+		.frogButton{
+		position: absolute;
+		top: 63%;
+		left: 35%;
+		z-index: 2;
+		}
 
 	.frogContainer{
 		text-align: right;
@@ -204,9 +209,16 @@ span{
 		right:0;
 		z-index: -2;
 
-		img{
+	
+			img{
 			width: 100%;
-		}
+			position: relative;
+			}
+		
+
+		
+
+	
 	}
 	.frogText{
 		width: 60%;
@@ -215,6 +227,8 @@ span{
 		background: $secondaryHighlight;
 		margin-top: 30%;
 		position: relative;
+		box-shadow: 2px 2px 2px 2px #32526D;
+
 	}
 }
 // Start of slide 5 styles
@@ -230,14 +244,13 @@ span{
 		background: $secondaryHighlight;
 		padding: 3%;
 		border-radius: 30px;
-		box-shadow: 3px 3px #32526D;
+		box-shadow: 2px 2px 2px 2px #32526D;
 		top: 10%;
 	}
 }
 
 .slide7{
 	.textContainer7{
-			border-left: 2px solid black;
 			width: 100%;
 			font-family: $paraFont;
 			font-size: 2rem;
@@ -245,7 +258,7 @@ span{
 			background: lightgreen;
 			padding: 8%;
 			border-radius: 30px;
-			box-shadow: 1px 2px black;
+			box-shadow: 2px 2px 2px 2px #32526D;
 	}
 }
 
@@ -262,7 +275,7 @@ span{
 			background: lightgreen;
 			padding: 2%;
 			border-radius: 30px;
-			box-shadow: 1px 2px black;
+			box-shadow: 2px 2px 2px 2px #32526D;
 			position: absolute;
 			top: 15%;
 
@@ -287,7 +300,7 @@ span{
 			background: lightgreen;
 			padding: 2%;
 			border-radius: 30px;
-			box-shadow: 1px 2px black;
+			box-shadow: 2px 2px 2px 2px #32526D;
 			position: absolute;
 			top: 25%;
 			left:25%;
@@ -300,15 +313,7 @@ span{
 	background-repeat: no-repeat;
 	background-position-x: right;
 
-	.textContainer13{
-		width: 60%;
-		font-family: $paraFont;
-		font-size: 2rem;
-		line-height: 2rem;
-		background: lightgreen;
-		padding: 2%;
-		border-radius: 30px;
-	}
+
 }
 
 .textContainer14{

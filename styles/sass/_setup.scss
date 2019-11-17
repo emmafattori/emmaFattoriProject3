@@ -64,3 +64,15 @@ h3{
 	position: relative;
 	height: 100vh;
 }
+
+.textContainer{
+		width: 60%;
+		font-family: $paraFont;
+		font-size: 2rem;
+		line-height: 2rem;
+		background: lightgreen;
+		padding: 2%;
+		border-radius: 30px;
+		box-shadow: 2px 2px 2px 2px #32526D;
+
+}
