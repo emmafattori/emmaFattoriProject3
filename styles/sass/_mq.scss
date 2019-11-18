@@ -1,3 +1,5 @@
+// Start of MQ for max-width 375 px
+
 @media (max-width: 375px){
 	p, 
 	span.name, 
@@ -94,12 +96,11 @@
 		line-height: 2rem;
 	}
 
-
-
 }
 
+// Start of MQ for max-width 487px
 @media (max-width: 487px){
-		p, 
+	p, 
 	span.name, 
 	span.pronoun, 
 	span.pronoun2, 
@@ -119,9 +120,9 @@
 		width:85%;
 	}
 }
-
+// Start of MQ for max-width 695 px
 @media (max-width: 695px){
-		p, 
+	p, 
 	span.name, 
 	span.pronoun, 
 	span.pronoun2, 
@@ -161,6 +162,7 @@
 			top: 50%;
 		}
 	}
-
 }
+
+// End of media queries
 

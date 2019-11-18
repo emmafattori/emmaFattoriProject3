@@ -1,5 +1,6 @@
 const storyApp = {};
-// This is a function that takes a perameter of the slide number. The slide number corresponds to the html section of the story. The function slides to the slide number that is passed as an argument.
+
+// Below is a function that takes a perameter of the slide number. The slide number corresponds to the html section of the story. The function slides to the slide number that is passed as an argument.
 
 storyApp.init = () =>{
 	const nextPage = function(slideNo){
@@ -15,6 +16,7 @@ storyApp.init = () =>{
 	storyApp.pronoun = $('input[type=checkbox]:checked').val();
 
 	$('.name').text(storyApp.userName);
+
 	$('.pronoun').text(storyApp.pronoun);
 
 	nextPage('#slide1');
@@ -22,7 +24,7 @@ storyApp.init = () =>{
 	pronounPicker2();
 	});
 
-// Function to run when 'next page' on previous page is clicked
+// Function to run when 'next page' on previous page is clicked, and animate bugs on slide 3, 5 and 9.
 
 	$('.next1').on('click', function(){
 		nextPage('#slide2');
@@ -30,53 +32,39 @@ storyApp.init = () =>{
 	$('.next2').on('click', function(){
 		nextPage('#slide3');
 		$('.bug').animate({right: "-80%"}, 5000);
-	
 	})
-
 	$('.next3').on('click', function(){
 		nextPage('#slide4');
 	})
-
 	$('.next4').on('click', function(){
 		nextPage('#slide5');
-		
 	})
-
 	$('.next5').on('click', function(){
 		nextPage('#slide6');
 		$('.dragon').animate({right: "-80%"}, 5000);
 	})
-
 	$('.next6').on('click', function(){
 		nextPage('#slide7');
 	})
-
 	$('.next7').on('click', function(){
 		nextPage('#slide8');
 	})
-
 	$('.next8').on('click', function(){
 		nextPage('#slide9');
 		$('.bee').animate({right: "-80%"}, 5000);
-
 	})
-
 	$('.next9').on('click', function(){
 		nextPage('#slide10');
 	})
-
 	$('.next10').on('click', function(){
 		nextPage('#slide11');
 	})
-
 	$('.next11').on('click', function(){
 		nextPage('#slide12');
 	})
-
 	$('.next12').on('click', function(){
 		nextPage('#slide13');
 	})
-
 	$('.next13').on('click', function(){
 		nextPage('#slide14');
 	})
@@ -102,10 +90,10 @@ pronounPicker1 = function(){
 		$('.pronoun2').text('they')
 	}
 };
-
+//him her they
 pronounPicker2 = function(){
 		if(storyApp.pronoun === 'her'){
-			$('.pronoun3').text('her\'s')
+			$('.pronoun3').text('her')
 		} else if (storyApp.pronoun === 'him'){
 			$('.pronoun3').text('his')
 		}else {
@@ -115,6 +103,5 @@ pronounPicker2 = function(){
 };
 // Document ready function
 $(document).ready(() => {
-    storyApp.init();
-	
+    storyApp.init();	
 });

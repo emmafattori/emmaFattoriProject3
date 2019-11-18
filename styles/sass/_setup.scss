@@ -34,14 +34,6 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
 	margin:0 auto;
 }
 
-.show{
-	display:block;
-}
-
-.hide{
-	display:none;
-}
-
 p{
 	font-family: $paraFont;
 }
@@ -74,5 +66,4 @@ h3{
 		padding: 2%;
 		border-radius: 30px;
 		box-shadow: 2px 2px 2px 2px #32526D;
-
 }

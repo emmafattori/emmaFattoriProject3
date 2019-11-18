@@ -15,10 +15,9 @@ $secondaryHighlight: lightgreen;
 header{
 	height: 100vh;
 	background-attachment:static;
-	
+	margin-bottom: 25%;
 		
 	.headerInfo{
-
 		margin: 8% auto 0;
 			h1{
 				font-family: $headerFont;
@@ -36,84 +35,81 @@ header{
 				line-height:4rem;
 			}
 	}
-
-}
-
-.formContainer{
-	margin:5% auto;
-	width: 70%;
-	text-align: center;
-
-	
-	fieldset, legend, label{
-		border:none;
-		margin:2% auto;
-		font-family: $headerFont;
-		color: $secondaryColour;
-	}
-
-	legend{
-		margin: 3% auto;
-		font-size: 1.8rem;
-	}
-
-	.check{
-		font-size: 1.5rem;
-	}
-
-	input[type=checkbox]{
-		opacity:0;
-	}
-
-	input[type=checkbox]:checked + label{
-		border: 2px solid $secondaryColour;
-		padding: 1%;
-	}
-
-
-	.nameLabel{
-		
-		padding: 2%;
-		font-size: 2rem;
-	}
-
-	input[type=text]{
-		font-size: 2rem;
-		font-family: $paraFont;
-		border-radius: 20px;
+	.formContainer{
+		margin:5% auto;
+		width: 70%;
 		text-align: center;
-	}
-
-	.nameContainer{
-		background: $secondaryHighlight;
-		padding:2%;
-		border-radius: 20px;
-		border: 2px solid $secondaryColour;
-	}
 
 	
-	.submit{
-		padding:3%;
-		font-family: $paraFont;
-		background: $primaryHighlight;
-		box-shadow: 3px 3px $secondaryHighlight;
-		border:none;
-		border-radius: 10px;
-		font-size: 2.5rem;
+		fieldset, legend, label{
+			border:none;
+			margin:2% auto;
+			font-family: $headerFont;
+			color: $secondaryColour;
+		}
+
+		legend{
+			margin: 3% auto;
+			font-size: 1.8rem;
+		}
+
+		.check{
+			font-size: 1.5rem;
+		}
+
+		input[type=checkbox]{
+			opacity:0;
+		}
+
+		input[type=checkbox]:checked + label{
+			border: 2px solid $secondaryColour;
+			padding: 1%;
+		}
+
+
+		.nameLabel{
+			
+			padding: 2%;
+			font-size: 2rem;
+		}
+
+		input[type=text]{
+			font-size: 2rem;
+			font-family: $paraFont;
+			border-radius: 20px;
+			text-align: center;
+		}
+
+		.nameContainer{
+			background: $secondaryHighlight;
+			padding:2%;
+			border-radius: 20px;
+			border: 2px solid $secondaryColour;
+		}
+
+	
+		.submit{
+			padding:3%;
+			font-family: $paraFont;
+			background: $primaryHighlight;
+			box-shadow: 3px 3px $secondaryHighlight;
+			border:none;
+			border-radius: 10px;
+			font-size: 2.5rem;
+		}
 	}
 }
 // End of title page styling
 
-// Start of styling for dynamic inputs
+// Start of styling for dynamic inputs in story
 .name{
 	font-size: 1.8rem;
 	text-transform: capitalize;
 }
-
 span{
 	font-size:2rem;
-}
-	
+}	
+
 // Start of slide 1 styles
 
 .slide1 {
@@ -178,7 +174,7 @@ span{
 	position: relative;
 
 		.dragon, 
-		.bug{
+		.bug {
 			width: 100%;
 			position: absolute;
 			right: 450px;
@@ -211,15 +207,10 @@ span{
 		z-index: -2;
 
 	
-			img{
+		img{
 			width: 100%;
 			position: relative;
-			}
-		
-
-		
-
-	
+		}
 	}
 	.frogText{
 		width: 60%;
@@ -229,9 +220,9 @@ span{
 		margin-top: 30%;
 		position: relative;
 		box-shadow: 2px 2px 2px 2px #32526D;
-
 	}
 }
+
 // Start of slide 5 styles
 .slide5{
 	height: 100vh;
@@ -250,6 +241,7 @@ span{
 	}
 }
 
+// Start of slide 7 slides - note that class names were reused to re-use code on certain slides.
 .slide7{
 	.textContainer7{
 			width: 100%;
@@ -279,7 +271,6 @@ span{
 			box-shadow: 2px 2px 2px 2px #32526D;
 			position: absolute;
 			top: 15%;
-
 	}
 }
 
@@ -313,7 +304,6 @@ span{
 	background-image: url(assets/tree.png);
 	background-repeat: no-repeat;
 	background-position-x: right;
-
 
 }
 

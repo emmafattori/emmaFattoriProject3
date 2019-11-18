@@ -197,14 +197,6 @@ body, header, section, aside, article, h1, h2, h3, h4, h5, h6, p, form, input, l
   margin: 0 auto;
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 p {
   font-family: "Pangolin", cursive;
 }
@@ -558,6 +550,7 @@ h3 {
 header {
   height: 100vh;
   background-attachment: static;
+  margin-bottom: 25%;
 }
 
 header .headerInfo {
@@ -580,57 +573,57 @@ header .headerInfo h3, header .headerInfo h4 {
   line-height: 4rem;
 }
 
-.formContainer {
+header .formContainer {
   margin: 5% auto;
   width: 70%;
   text-align: center;
 }
 
-.formContainer fieldset, .formContainer legend, .formContainer label {
+header .formContainer fieldset, header .formContainer legend, header .formContainer label {
   border: none;
   margin: 2% auto;
   font-family: "Love Ya Like A Sister", cursive;
   color: #122739;
 }
 
-.formContainer legend {
+header .formContainer legend {
   margin: 3% auto;
   font-size: 1.8rem;
 }
 
-.formContainer .check {
+header .formContainer .check {
   font-size: 1.5rem;
 }
 
-.formContainer input[type=checkbox] {
+header .formContainer input[type=checkbox] {
   opacity: 0;
 }
 
-.formContainer input[type=checkbox]:checked + label {
+header .formContainer input[type=checkbox]:checked + label {
   border: 2px solid #122739;
   padding: 1%;
 }
 
-.formContainer .nameLabel {
+header .formContainer .nameLabel {
   padding: 2%;
   font-size: 2rem;
 }
 
-.formContainer input[type=text] {
+header .formContainer input[type=text] {
   font-size: 2rem;
   font-family: "Pangolin", cursive;
   border-radius: 20px;
   text-align: center;
 }
 
-.formContainer .nameContainer {
+header .formContainer .nameContainer {
   background: lightgreen;
   padding: 2%;
   border-radius: 20px;
   border: 2px solid #122739;
 }
 
-.formContainer .submit {
+header .formContainer .submit {
   padding: 3%;
   font-family: "Pangolin", cursive;
   background: #F2FF49;
