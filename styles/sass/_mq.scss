@@ -54,13 +54,17 @@
 
 	.slide2 .rightText, 
 	.textContainer5, 
-	.slide7 .textContainer7,
-	.textContainer, 
+	.slide7 .textContainer7, 
 	.textContainer11{
 		width: 85%;
 		position: absolute;
 		top: 70px;
 		margin:0 auto;
+	}
+
+	.textContainer{
+		width: 85%;
+		margin: 0 auto;
 	}
 
 	.frogContainer{
@@ -117,7 +121,11 @@
 }
 
 @media (max-width: 695px){
-	p{
+		p, 
+	span.name, 
+	span.pronoun, 
+	span.pronoun2, 
+	span.pronoun3 {
 		font-size: 1.5rem;
 		line-height: 1.5rem;
 	}

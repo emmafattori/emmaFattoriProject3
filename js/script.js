@@ -116,4 +116,5 @@ pronounPicker2 = function(){
 // Document ready function
 $(document).ready(() => {
     storyApp.init();
+	
 });
