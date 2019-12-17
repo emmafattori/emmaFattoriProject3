@@ -13,7 +13,7 @@ storyApp.init = () =>{
 		e.preventDefault();
 	// Taking the user inputs, and appending their information into the body of the story.
 	storyApp.userName = $('input[type=text]').val();
-	storyApp.pronoun = $('input[type=checkbox]:checked').val();
+	storyApp.pronoun = $('input[type=radio]:checked').val();
 
 	$('.name').text(storyApp.userName);
 
